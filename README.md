@@ -1,4 +1,4 @@
-# Safelinks
+# Safelinks Remover / Stripper
 Microsoft safelinks purport to make email safer by replacing links to ones that redirect via microsoft cloud services to stop access if the location is identified as malicious. While there is some success, the link obfuscation comes at two measurable costs: (1) that it engenders more blind trust in links, which results in riskier behavior outside the closed email ecosystem; and (2) it hides key actionable information from informed users. Further, safelinks are often unknown to third parties and results in great confusion for those individuals not using Microsoft tools, in addition to the obvious privacy risks associated with a single point (Microsoft) knowing all links accessed by an individual.
 
 This respository provides a python tool that strips the safelink wrapping and restores the original link. It is primarily designed to run automatically as part of a filter chain in getmail. It can be used in a stand-alone fashion to remove safelinks from messages.
